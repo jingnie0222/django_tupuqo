@@ -81,7 +81,6 @@ def debug(request):
                 return ret
 
             data = BeautifulSoup(resp.content.decode('utf-16le'))
-            print(data)
             ret['data'] = data.prettify()
 
         except Exception as e:
